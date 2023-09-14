@@ -38,9 +38,11 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
+        working-directory: bvanek/
         run: npm install
 
       - name: Build
+        working-directory: bvanek/
         run: npm run build
 
       - name: deploy
