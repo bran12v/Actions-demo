@@ -37,6 +37,10 @@ jobs:
       - name: list files
         run: ls -la spring/bvanek/target
 
+      - name: deploy
+        working-directory: spring/bvanek/target
+        run: aws s3 cp *.jar s3://anything-really/
+        
   # post-build: #VM2
   #   needs: build
   #   runs-on: ubuntu-latest
