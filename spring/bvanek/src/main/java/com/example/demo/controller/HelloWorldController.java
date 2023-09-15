@@ -8,7 +8,7 @@ public class HelloWorldController {
 
 	@RequestMapping("/")
 	public String Hello() {
-		return "<h1>Hello World</h1>";
+		return "<h1>Congratulations you have implemented CI/CD for Spring!</h1>";
 	}
 	
 }
