@@ -36,6 +36,6 @@ jobs:
       - name: list files
         run: ls -la spring/bvanek/target
 
-  post-build: #VM2
-    needs: build
-    runs-on: ubuntu-latest
+  # post-build: #VM2
+  #   needs: build
+  #   runs-on: ubuntu-latest
