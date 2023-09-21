@@ -46,7 +46,7 @@ jobs:
         run: npm run build
 
       - name: deploy
-        run: aws s3 sync bvanek/dist/bvanek s3://anything-really/
+        run: aws s3 sync bvanek/dist/bvanek s3://bvanek-origin/
 
 
 
